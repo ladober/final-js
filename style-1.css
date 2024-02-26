@@ -1,0 +1,104 @@
+
+.question-p{
+    font-weight: 200;
+    font-size: 25px;
+    font-family: 'Rubik Italic';
+    margin-top: 15px;
+}
+
+.question-span{
+    max-width: 460px;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Rubik Regular';
+}
+
+.icon p {
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Rubik Regular';
+    background-color: rgb(219, 218, 218);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.icon:hover p {
+    color: rgb(223, 59, 223);
+    background-color: rgb(250, 216, 250);
+}
+
+.icon h1 {
+    max-width: 400px;
+}
+
+.progress-bar {
+    margin-top: 150px;
+    width: 450px;
+    height: 20px;
+}
+
+.button-next {
+    margin-top: 60px;
+    width: 500px;
+    height: 80px;
+    border-radius: 20px;
+    background: rgb(145, 42, 214);
+    color: white;
+    font-family: 'Rubik Regular';
+    font-size: 30px;
+    font-weight: 500;
+    border: none;;
+}
+
+.button-next:hover{
+    filter: opacity(50%);
+}
+
+.button-next:active {
+    filter: opacity(40%);
+}
+
+.correct-answer {
+    border: 2px solid greenyellow;
+    color: rgb(6, 248, 6);
+}
+
+/* progress */
+
+progress {
+    background-color: red;
+    
+    }
+progress::-webkit-progress-value {
+    background: rgb(241, 5, 222);
+    border-radius: 8px;
+}
+
+.no-progress {
+    display: none;
+}
+
+.wrong-answer {
+    border: 2px solid red;
+    color: red;
+}
+
+/* final-results */
+
+.final-results-p {
+    font-weight: 200;
+    font-size: 25px;
+    font-family: 'Rubik Italic';
+    margin-top: 15px;
+}
+
+.final-results-h1 {
+    max-width: 460px;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Rubik Regular';
+}

@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Rubik Regular';
+    src: url(./assets/fonts/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik Italic';
+    src: url(./assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+}
+:root {
+    --body-bg-color: #f3f1f1;
+    --main-text-color: #000000;
+    --body-bg-img: url("./assets/images/pattern-background-desktop-light.svg");
+}
+
+body {
+    height: 100vh;
+    background-color: var(--body-bg-color);
+    color: var(--main-text-color);
+    background-image: var(--body-bg-img); 
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+[data-theme="dark"] {
+    --body-bg-img: url(./assets/images/pattern-background-desktop-dark.svg);
+    --body-bg-color: #2e4350;
+    --main-text-color: white;
+}
+
+.theme-section {
+    display: flex;
+    justify-content: center;
+    gap: 820px;
+    margin-top: 200px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo {
+    background-color: rgb(247, 235, 243);
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.accessibility-logo{
+    width: 30px;
+    height: 30px;
+}
+
+.theme {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.theme-switcher{
+    width: 40px;
+    height: 20px;
+    background-color: rgb(95, 6, 136);
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn {
+    position: absolute;
+    width: 22px;
+    height: 20px;
+    background-color:white;
+    border-radius: 50%;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.next-btn {
+    transform: translateX(16px);
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 20px;
+    background-color:white;
+    border-radius: 50%;
+}
+
+/* description */
+
+.quiz{
+    display: flex;
+    justify-content: center;
+    gap:195px;
+    margin-top: 200px;
+}
+
+/* description */
+
+.description-h1{
+    font-weight: 600;
+    font-size: 65px;
+    font-family: 'Rubik Regular';
+}
+
+.description-span{
+    font-weight:100;
+    font-size: 67px;
+    font-family: 'Rubik Regular';
+}
+
+.description-p{
+    font-weight: 400;
+    font-size: 21px;
+    font-family: 'Rubik Italic';
+    margin-top: 15px;
+}
+
+/* quiz subjects -------------------------------------- */
+
+.icon {
+    width: 500px;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.icon:nth-child(1) img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: rgb(245, 235, 215);
+    margin-left: 10px;
+}
+
+[data-theme="dark"] .icon {
+    background-color: #587281;
+}
+.icon:nth-child(2){
+    margin-top: 20px;
+}
+
+.icon:nth-child(2) img{
+    background-color: rgb(198, 248, 221);
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.icon:nth-child(3){
+    margin-top: 20px;
+}
+
+.icon:nth-child(3) img{
+    background-color: rgb(154, 231, 250);
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.icon:nth-child(4){
+    margin-top: 20px;
+}
+
+.icon:nth-child(4) img{
+    background-color: rgb(248, 221, 252);
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+/* subjects h1 */
+
+.icon h1 {
+    margin-left: 20px;
+}
+
+/* final page/ score */
+
+.final-result {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+ 

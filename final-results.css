@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Rubik Regular';
+    src: url(./assets/fonts/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik Italic';
+    src: url(./assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+}
+
+:root {
+    --body-bg-color: #f3f1f1;
+    --main-text-color: #000000;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--body-bg-color);
+    color: var(--main-text-color);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+[data-theme="dark"] {
+    --body-bg-color: #2e4350;
+    --main-text-color: white;
+}
+
+.final-results-p {
+    font-weight: 200;
+    font-size: 55px;
+    font-family: 'Rubik Italic';
+    margin-top: 15px;
+    letter-spacing: 3px;
+}
+
+.final-results-h1 {
+    max-width: 460px;
+    font-weight: 800;
+    font-size: 50px;
+    font-family: 'Rubik Regular';
+}
+
+.final-results {
+    display: flex;
+    justify-content: center;
+    gap:195px;
+    margin-top: 200px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo {
+    background-color: rgb(247, 235, 243);
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.theme-section {
+    display: flex;
+    justify-content: center;
+    gap: 820px;
+    margin-top: 200px;
+}
+
+.theme-switcher{
+    width: 40px;
+    height: 20px;
+    background-color: rgb(95, 6, 136);
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+}
+
+.theme {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn {
+    position: absolute;
+    width: 22px;
+    height: 20px;
+    background-color:white;
+    border-radius: 50%;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.next-btn {
+    transform: translateX(16px);
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 20px;
+    background-color:white;
+    border-radius: 50%;
+}
+
+.quiz{
+    display: flex;
+    justify-content: center;
+    gap:195px;
+}
+
+
+.total-answers {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+[data-theme="dark"] .total-answers {
+    background-color: #587281;
+}
+
+.assets {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-family: 'Rubik Regular';
+}
+
+.assets img {
+    width: 60px;
+    height: 60px;
+}
+
+.final-score {
+    text-align: center;
+}
+
+.final-score h1 {
+    font-size: 140px;
+    font-weight: 500;
+    font-family: 'Rubik Regular';
+}
+
+.final-score p {
+    font-size: 25px;
+}
