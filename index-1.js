@@ -177,10 +177,12 @@ let answersRender = (data) => {
     answers[m].addEventListener("click", () => {
       if (answers[m].children[1].textContent === correctAnswer) {
         answers[m].classList.add("correct-answer");
+        subjects.style.pointerEvents = "none";
         correctAnsweresCounter++;
         localStorage.setItem("answers", correctAnsweresCounter);
       } else {
         answers[m].classList.add("wrong-answer");
+        subjects.style.pointerEvents = "none";
       }
     });
   }
